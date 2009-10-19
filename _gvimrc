@@ -1,0 +1,5 @@
+" Copy this file to ~/.gvimrc (Unix) 
+" or to %USERPROFILE%/_gvimrc (Windows)
+
+source ~/vimfiles/gvimrc
+

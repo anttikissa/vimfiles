@@ -1,9 +1,3 @@
-cd c:/work/dippa/tex
-
-colorscheme antti
-
-set makeprg=mk.cmd
-
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -12,15 +6,9 @@ set expandtab
 set list
 set listchars=tab:·\ ,extends:»,precedes:«
 
-set guifont=Inconsolata:h11
-set guioptions+=ab
-set guioptions-=tT
-
-set lines=60 columns=153
-winpos 600 0
-
 set backspace=indent,eol,start
-set textwidth=120
+
+set textwidth=80
 
 set ruler
 
@@ -52,9 +40,9 @@ onoremap <C-F4> <C-C><C-W>c
 nnoremap <silent> <F8> :TlistToggle<CR>
 
 " CTRL-Z is :shell
-noremap <C-Z> :shell
-inoremap <C-Z> <C-O>:shell
+noremap <C-Z> :shell
+inoremap <C-Z> <C-O>:shell
 
-let tlist_tex_settings   = 'latex;s:sections;g:graphics;l:labels'
-let tlist_make_settings  = 'make;m:makros;t:targets'
+" let tlist_tex_settings   = 'latex;s:sections;g:graphics;l:labels'
+" let tlist_make_settings  = 'make;m:makros;t:targets'
 
