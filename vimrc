@@ -3,6 +3,9 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+set modeline
+set modelines=5
+
 set list
 set listchars=tab:·\ ,extends:»,precedes:«
 
