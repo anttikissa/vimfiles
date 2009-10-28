@@ -7,4 +7,7 @@ set guioptions+=ab
 set guioptions-=tT
 set textwidth=120
 
+" CTRL-Z is :shell
+noremap <C-Z> :shell
+inoremap <C-Z> <C-O>:shell
 

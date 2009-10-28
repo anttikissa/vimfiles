@@ -44,10 +44,6 @@ onoremap <C-F4> <C-C><C-W>c
 
 nnoremap <silent> <F8> :TlistToggle<CR>
 
-" CTRL-Z is :shell
-noremap <C-Z> :shell
-inoremap <C-Z> <C-O>:shell
-
 " let tlist_tex_settings   = 'latex;s:sections;g:graphics;l:labels'
 " let tlist_make_settings  = 'make;m:makros;t:targets'
 
