@@ -1,3 +1,5 @@
+cd ~/work/dippa/tex
+
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -19,6 +21,8 @@ filetype on
 filetype plugin on
 
 syntax on
+
+au BufNewFile,BufRead *.less set filetype=less
 
 set autoindent
 
