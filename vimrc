@@ -1,7 +1,7 @@
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set expandtab
+" set expandtab
 
 set modeline
 set modelines=5
@@ -21,6 +21,9 @@ filetype plugin on
 syntax on
 
 au BufNewFile,BufRead *.less set filetype=less
+au BufNewFile,BufRead *.txt set expandtab
+au BufNewFile,BufRead *.tex set expandtab
+au BufNewFile,BufRead *.bib set expandtab
 
 set autoindent
 
