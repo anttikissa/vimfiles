@@ -1,7 +1,10 @@
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set expandtab
+" set expandtab
+
+set modeline
+set modelines=5
 
 set list
 set listchars=tab:·\ ,extends:»,precedes:«
@@ -16,6 +19,11 @@ filetype on
 filetype plugin on
 
 syntax on
+
+au BufNewFile,BufRead *.less set filetype=less
+au BufNewFile,BufRead *.txt set expandtab
+au BufNewFile,BufRead *.tex set expandtab
+au BufNewFile,BufRead *.bib set expandtab
 
 set autoindent
 
@@ -38,10 +46,6 @@ cnoremap <C-F4> <C-C><C-W>c
 onoremap <C-F4> <C-C><C-W>c
 
 nnoremap <silent> <F8> :TlistToggle<CR>
-
-" CTRL-Z is :shell
-noremap <C-Z> :shell
-inoremap <C-Z> <C-O>:shell
 
 " let tlist_tex_settings   = 'latex;s:sections;g:graphics;l:labels'
 " let tlist_make_settings  = 'make;m:makros;t:targets'
