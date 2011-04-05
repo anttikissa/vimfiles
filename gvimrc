@@ -1,11 +1,11 @@
-cd ~/work/dippa/kernelc/src/kernelc
+" cd ~/work/dippa/kernelc/src/kernelc
 
 colorscheme antti
-set guifont=Inconsolata:h13
-set lines=56 columns=120
+set guifont=Inconsolata:h16
+" set lines=56 columns=120
 set guioptions+=ab
 set guioptions-=tT
-set textwidth=104
+" set textwidth=104
 set visualbell
 
 " CTRL-Z is :shell

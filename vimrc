@@ -9,6 +9,8 @@ set modelines=5
 set list
 set listchars=tab:·\ ,extends:»,precedes:«
 
+set formatoptions-=t
+
 set backspace=indent,eol,start
 
 set textwidth=80
@@ -21,6 +23,7 @@ filetype plugin on
 syntax on
 
 au BufNewFile,BufRead *.less set filetype=less
+au! BufRead,BufNewFile *.json setfiletype json 
 au BufNewFile,BufRead *.txt set expandtab
 au BufNewFile,BufRead *.tex set expandtab
 au BufNewFile,BufRead *.bib set expandtab
