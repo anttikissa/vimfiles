@@ -16,6 +16,7 @@ set backspace=indent,eol,start
 set textwidth=80
 
 set ruler
+set laststatus=2
 
 filetype on
 filetype plugin on
