@@ -6,6 +6,8 @@ set softtabstop=4
 set modeline
 set modelines=5
 
+set number
+
 set list
 set listchars=tab:·\ ,extends:»,precedes:«
 
@@ -22,6 +24,13 @@ filetype on
 filetype plugin on
 
 syntax on
+
+" It would make more sense to create a color scheme for the terminal, but let's
+" just do this.
+hi LineNr ctermfg=grey
+hi SpecialKey ctermfg=grey
+hi MatchParen cterm=underline ctermbg=0 ctermfg=8
+" hi Normal ctermfg=7
 
 au BufNewFile,BufRead *.less set filetype=less
 au! BufRead,BufNewFile *.json setfiletype json 
