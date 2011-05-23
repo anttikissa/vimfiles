@@ -1,5 +1,8 @@
 #!/bin/sh
 
+git submodule sync
+git submodule update
+
 if [ -f ~/.vimrc ]
 then
 	echo Moving your ~/.vimrc out of the way
