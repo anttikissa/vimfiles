@@ -8,6 +8,8 @@ set guioptions-=tT
 " set textwidth=104
 set visualbell
 
+hi MatchParen gui=underline guifg=red guibg=bg
+
 " CTRL-Z is :shell
 noremap <C-Z> :shell
 inoremap <C-Z> <C-O>:shell
