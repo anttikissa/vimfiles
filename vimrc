@@ -29,7 +29,7 @@ syntax on
 " just do this.
 hi LineNr ctermfg=grey
 hi SpecialKey ctermfg=grey
-hi MatchParen cterm=underline ctermbg=0 ctermfg=8
+hi MatchParen cterm=underline ctermbg=0 ctermfg=red
 " hi Normal ctermfg=7
 
 au BufNewFile,BufRead *.less set filetype=less
