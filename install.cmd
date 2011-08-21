@@ -1,4 +1,7 @@
 
+git submodule sync
+git submodule update
+
 @echo Moving your _vimrc out of the way
 move %USERPROFILE%\_vimrc %USERPROFILE%\_vimrc
 

@@ -1,11 +1,14 @@
-cd ~/work/dippa/tex
+" cd ~/work/dippa/kernelc/src/kernelc
 
 colorscheme antti
-set guifont=Inconsolata:h11
-set lines=56 columns=120
+set guifont=Inconsolata:h16
+" set lines=56 columns=120
 set guioptions+=ab
 set guioptions-=tT
-set textwidth=120
+" set textwidth=104
+set visualbell
+
+hi MatchParen gui=underline guifg=red guibg=bg
 
 " CTRL-Z is :shell
 noremap <C-Z> :shell
