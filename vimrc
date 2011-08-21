@@ -38,6 +38,8 @@ hi MatchParen cterm=underline ctermbg=0 ctermfg=red
 au BufNewFile,BufRead *.less set filetype=less sw=2 sts=2 et
 au BufNewFile,BufRead *.haml set sw=2 sts=2 et
 
+au! BufRead,BufNewFile *.vs,*.fs,*.glsl set filetype=glsl 
+
 au! BufRead,BufNewFile *.json setfiletype json 
 au BufNewFile,BufRead *.txt set expandtab
 au BufNewFile,BufRead *.tex set expandtab
