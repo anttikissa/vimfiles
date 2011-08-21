@@ -3,6 +3,7 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+
 set modeline
 set modelines=5
 
@@ -21,6 +22,8 @@ filetype plugin on
 syntax on
 
 au BufNewFile,BufRead *.less set filetype=less
+
+au BufNewFile,BufRead *.txt set formatoptions-=a
 
 set autoindent
 
@@ -46,4 +49,3 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 
 " let tlist_tex_settings   = 'latex;s:sections;g:graphics;l:labels'
 " let tlist_make_settings  = 'make;m:makros;t:targets'
-
