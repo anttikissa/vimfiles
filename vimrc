@@ -25,6 +25,8 @@ filetype plugin on
 
 syntax on
 
+set autochdir
+
 " It would make more sense to create a color scheme for the terminal, but let's
 " just do this.
 hi LineNr ctermfg=grey
