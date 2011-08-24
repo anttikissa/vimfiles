@@ -3,7 +3,6 @@ set shiftwidth=4
 " set softtabstop=4
 " set expandtab
 
-
 set modeline
 set modelines=5
 
@@ -21,6 +20,11 @@ set textwidth=80
 set ruler
 set laststatus=2
 
+" Necessary in Ubuntu, since /etc/vim/vimrc says 'syntax on', after which
+" ftdetect scripts are loaded, and after that, ~/vimfiles/ is added to
+" runtimepath (but files in ~/vimfiles/ftdetect are not loaded!). This forces
+" loading scripts in ~/vimfiles/ftdetect. Complicated enough?
+filetype off
 filetype on
 filetype plugin on
 
