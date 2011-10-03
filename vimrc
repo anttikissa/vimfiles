@@ -51,6 +51,9 @@ au BufNewFile,BufRead *.bib set expandtab
 
 au BufNewFile,BufRead *.txt set formatoptions-=a
 
+" Automagical coffeescript compilation
+au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw!
+
 set autoindent
 
 " CTRL-Tab is Next window
