@@ -47,6 +47,14 @@ set undoreload=10000
 hi LineNr ctermfg=grey
 hi SpecialKey ctermfg=grey
 hi MatchParen cterm=underline ctermbg=0 ctermfg=red
+
+color ir_black
+
+" An incomplete list of things to fix so things won't look unreadable on OS X
+" Lion terminal with IR_Black theme installed
+hi SpellBad ctermbg=none ctermfg=red cterm=underline
+" TODO and lots of others, see :hi
+
 " hi Normal ctermfg=7
 
 au BufNewFile,BufRead *.less set filetype=less sw=2 sts=2 et
