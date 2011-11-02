@@ -20,6 +20,9 @@ set textwidth=80
 set ruler
 set laststatus=2
 
+" Fix jslint plugin
+let $JS_CMD='node'
+
 " Necessary in Ubuntu, since /etc/vim/vimrc says 'syntax on', after which
 " ftdetect scripts are loaded, and after that, ~/vimfiles/ is added to
 " runtimepath (but files in ~/vimfiles/ftdetect are not loaded!). This forces
