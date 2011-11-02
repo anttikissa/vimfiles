@@ -33,6 +33,12 @@ filetype plugin on
 
 syntax on
 
+" persistent undo (vim 7.3)
+set undodir=~/vimfiles/.vimundo
+set undofile
+set undolevels=1000
+set undoreload=10000
+
 " Turns out, this sucks
 " set autochdir
 
