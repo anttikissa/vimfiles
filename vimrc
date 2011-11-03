@@ -53,6 +53,8 @@ color ir_black
 " An incomplete list of things to fix so things won't look unreadable on OS X
 " Lion terminal with IR_Black theme installed
 hi SpellBad ctermbg=none ctermfg=red cterm=underline
+hi ErrorMsg ctermbg=none ctermfg=red cterm=none
+hi Error ctermbg=none ctermfg=red cterm=underline
 " TODO and lots of others, see :hi
 
 " hi Normal ctermfg=7
