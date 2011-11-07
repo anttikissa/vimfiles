@@ -55,6 +55,8 @@ color ir_black
 hi SpellBad ctermbg=none ctermfg=red cterm=underline
 hi ErrorMsg ctermbg=none ctermfg=red cterm=none
 hi Error ctermbg=none ctermfg=red cterm=underline
+hi SpecialKey cterm=none ctermfg=darkgrey ctermbg=none
+
 " TODO and lots of others, see :hi
 
 " hi Normal ctermfg=7
