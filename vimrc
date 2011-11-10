@@ -44,9 +44,7 @@ set undoreload=10000
 
 " It would make more sense to create a color scheme for the terminal, but let's
 " just do this.
-hi LineNr ctermfg=grey
-hi SpecialKey ctermfg=grey
-hi MatchParen cterm=underline ctermbg=0 ctermfg=red
+" hi LineNr ctermfg=grey
 
 color ir_black
 
@@ -57,6 +55,7 @@ hi ErrorMsg ctermbg=none ctermfg=red cterm=none
 hi Error ctermbg=none ctermfg=red cterm=underline
 hi WarningMsg ctermbg=none ctermfg=5
 hi SpecialKey cterm=none ctermfg=darkgrey ctermbg=none
+" hi MatchParen ctermfg=red
 
 " TODO and lots of others, see :hi
 
