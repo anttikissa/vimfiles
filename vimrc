@@ -39,6 +39,17 @@ set undofile
 set undolevels=1000
 set undoreload=10000
 
+" Commenting blocks of code. Source:
+" http://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim
+autocmd FileType c,cpp,java,scala,javascript let b:comment_leader = '//'
+autocmd FileType sh,ruby,python,coffee let b:comment_leader = '# '
+autocmd FileType conf,fstab       let b:comment_leader = '# '
+autocmd FileType tex              let b:comment_leader = '% '
+autocmd FileType mail             let b:comment_leader = '> '
+autocmd FileType vim              let b:comment_leader = '" '
+noremap <silent> ,c :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
+noremap <silent> ,u :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
+
 " Turns out, this sucks
 " set autochdir
 
