@@ -1,2 +1,4 @@
 .Parent
 .AppleDouble
+.*.swp
+.vimundo
