@@ -11,6 +11,8 @@ set number
 set list
 set listchars=tab:·\ ,extends:»,precedes:«
 
+set hlsearch
+
 set formatoptions-=t
 
 set backspace=indent,eol,start
@@ -19,6 +21,10 @@ set textwidth=80
 
 set ruler
 set laststatus=2
+
+au WinLeave * set nocursorline 
+au WinEnter * set cursorline 
+set cursorline
 
 " Fix jslint plugin
 let $JS_CMD='node'
