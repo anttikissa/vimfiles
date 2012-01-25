@@ -72,6 +72,10 @@ hi ErrorMsg ctermbg=none ctermfg=red cterm=none
 hi Error ctermbg=none ctermfg=red cterm=underline
 hi WarningMsg ctermbg=none ctermfg=5
 hi SpecialKey cterm=none ctermfg=darkgrey ctermbg=none
+hi PMenuSel cterm=underline 
+hi PMenuThumb cterm=underline ctermbg=5
+hi PMenuSbar cterm=underline ctermbg=3
+
 " hi MatchParen ctermfg=red
 
 " TODO and lots of others, see :hi
@@ -87,11 +91,14 @@ au! BufRead,BufNewFile *.json setfiletype json
 au BufNewFile,BufRead *.txt set expandtab
 au BufNewFile,BufRead *.tex set expandtab
 au BufNewFile,BufRead *.bib set expandtab
+" au BufNewFile,BufRead *.yml set ai et sw=2 sts=2 
+
+au Filetype yaml setlocal ai et sw=2 sts=2
 
 au BufNewFile,BufRead *.txt set formatoptions-=a
 
 " Automagical coffeescript compilation
-au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw!
+" au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw!
 
 set autoindent
 
