@@ -47,7 +47,7 @@ set undoreload=10000
 
 " Commenting blocks of code. Source:
 " http://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim
-autocmd FileType c,cpp,java,scala,javascript let b:comment_leader = '//'
+autocmd FileType c,cpp,java,scala,javascript,less let b:comment_leader = '//'
 autocmd FileType sh,ruby,python,coffee let b:comment_leader = '# '
 autocmd FileType conf,fstab       let b:comment_leader = '# '
 autocmd FileType tex              let b:comment_leader = '% '
@@ -100,6 +100,7 @@ au BufNewFile,BufRead *.txt set formatoptions-=a
 " Automagical coffeescript compilation
 " au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw!
 
+au Filetype coffeescript set autoindent
 set autoindent
 
 " CTRL-Tab is Next window
@@ -124,3 +125,13 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 
 " let tlist_tex_settings   = 'latex;s:sections;g:graphics;l:labels'
 " let tlist_make_settings  = 'make;m:makros;t:targets'
+
+" Use a bar-shaped cursor for insert mode, even through tmux.
+if exists('$TMUX')
+	let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+	let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
+else
+	let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+	let &t_EI = "\<Esc>]50;CursorShape=2\x7"
+endif
+
