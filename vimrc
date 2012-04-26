@@ -22,9 +22,9 @@ set textwidth=80
 set ruler
 set laststatus=2
 
-au WinLeave * set nocursorline 
-au WinEnter * set cursorline 
-set cursorline
+" au WinLeave * set nocursorline 
+" au WinEnter * set cursorline 
+" set cursorline
 
 " Fix jslint plugin
 let $JS_CMD='node'
@@ -75,6 +75,9 @@ hi SpecialKey cterm=none ctermfg=darkgrey ctermbg=none
 hi PMenuSel cterm=underline 
 hi PMenuThumb cterm=underline ctermbg=5
 hi PMenuSbar cterm=underline ctermbg=3
+
+" Trying something funky
+hi Visual cterm=underline,bold ctermbg=none
 
 " hi MatchParen ctermfg=red
 
