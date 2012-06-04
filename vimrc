@@ -103,6 +103,8 @@ au BufNewFile,BufRead *.txt set formatoptions-=a
 " Automagical coffeescript compilation
 " au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw!
 
+command -nargs=1 C CoffeeCompile | :<args>
+
 au Filetype coffeescript set autoindent
 set autoindent
 
