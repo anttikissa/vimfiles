@@ -85,7 +85,8 @@ hi Visual cterm=underline,bold ctermbg=none
 
 " hi Normal ctermfg=7
 
-au BufNewFile,BufRead *.less set filetype=less sw=2 sts=2 et
+" au BufNewFile,BufRead *.less set filetype=less sw=2 sts=2 et
+au BufNewFile,BufRead *.less set filetype=less
 au BufNewFile,BufRead *.haml set sw=2 sts=2 et
 
 au! BufRead,BufNewFile *.vs,*.fs,*.glsl set filetype=glsl 
